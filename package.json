@@ -1,0 +1,26 @@
+{
+  "name": "word_viz",
+  "version": "1.0.0",
+  "description": "Visualize most common words in rap",
+  "main": "index.js",
+  "dependencies": {
+    "d3": "^4.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmaswood/word_viz.git"
+  },
+  "keywords": [
+    "rap"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmaswood/word_viz/issues"
+  },
+  "homepage": "https://github.com/nmaswood/word_viz#readme"
+}
