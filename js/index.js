@@ -14,21 +14,28 @@ class SVG {
         return svg;
     }
 
-    createCircles(svg, data){
+    createCircles(svg, data, counts, countMatrix, words){
+        debugger;
 
-        const g = svg.selectAll('g')
-            .data(data)
-            .enter()
-            .append('g');
-        
-        return;
+        //const circles = svg.selectAll('circle')
+            //.data(data)
+            //.enter();
+            //.append('circle')
+            //.attr('fill', function(d,i){
+                //return 'red';
+            //})
+            //.attr('cx', function(d,i){
 
-        const circles = g.selectAll('circle')
-            .append('circle')
-            .attr('fill', function(d){return 'black' ;})
-            .attr('cx', function(d){return 10;})
-            .attr('cy', function(d){return 10;})
-            .attr('r', function(d){return 10;})
+
+
+                //return 10;
+            //})
+            //.attr('cy', function(d,i){
+                //return 10;
+            //})
+            //.attr('r', function(d,i){
+                //return counts[i];
+            //})
 
         return circles;
     }
@@ -44,7 +51,7 @@ d3.csv('../data.csv', function(err, data){
     delete data
     const svg = builder.createSVG();
 
-    const circles = builder.createCircles(svg, builder.data);
+    const circles = builder.createCircles(svg, builder.data,builder.count, builder.countMatrix, builder.words);
 
 });
 
